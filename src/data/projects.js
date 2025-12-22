@@ -9,6 +9,15 @@ export const projects = [
     liveLink: "#"
   },
   {
+  id: 2,
+  title: "Heart Attack Prediction System",
+  description: "Engineered a machine learning solution to predict cardiovascular disease risk by analyzing physiological data from the Cleveland Heart Disease dataset. Implemented a robust Random Forest model with a Streamlit frontend, enabling instant clinical risk classification with a 94% success rate.",
+  techStack: ["Python", "Machine Learning", "Streamlit", "NumPy", "Scikit-Learn"],
+  image: "/projects/heart-prediction.png",
+  githubLink: "https://github.com/Kavyashree784/Heart-Disease-Risk-AI",
+  liveLink: "https://heart-disease-risk-ai-95wm5pcxs7rlqje3ujryus.streamlit.app"
+},
+  {
     id: 2,
     title: "Stock Price Prediction Model",
     description: "Developed a financial forecasting tool using Long Short-Term Memory (LSTM) neural networks to predict stock closing prices. Visualized trends and model performance (RMSE) using Matplotlib and deployed via Streamlit.",
