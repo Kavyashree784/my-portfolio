@@ -1,0 +1,29 @@
+/* src/sections/Contact.css */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.contact-text {
+  color: #8892b0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.btn-contact {
+  color: #61dafb;
+  background-color: transparent;
+  border: 1px solid #61dafb;
+  border-radius: 4px;
+  padding: 1.25rem 1.75rem;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: rgba(97, 218, 251, 0.1);
+}

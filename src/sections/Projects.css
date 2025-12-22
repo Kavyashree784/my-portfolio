@@ -1,0 +1,32 @@
+.projects-container {
+  max-width: 1400px;
+  width: 90%;      /* Takes up 90% of screen width */
+  margin: 0 auto;  /* Centers the container */
+  padding-bottom: 100px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 2.5rem;
+}
+
+.projects-grid {
+  /* We removed 'display: grid' because the new Zig-Zag rows handle their own layout */
+  display: block; 
+  margin-top: 50px;
+}
+
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,53 @@
+:root {
+  /* Modern Dark Theme Palette */
+  --bg-dark: #0a0f1c;       /* Deep Navy/Black */
+  --bg-card: #111a2e;       /* Slightly lighter for cards */
+  --text-primary: #e2e8f0;  /* Off-white for reading */
+  --text-secondary: #94a3b8;/* Muted blue-grey */
+  
+  /* The "Cyber" Gradient Colors */
+  --accent-cyan: #22d3ee;
+  --accent-purple: #a855f7;
+  --accent-pink: #ec4899;
+  
+  /* Global Gradient */
+  --gradient-main: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+  --gradient-text: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden; /* Prevents horizontal scrollbar */
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(34, 211, 238, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.08), transparent 25%);
+  background-attachment: fixed;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Global Selection Color */
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: #fff;
+}
