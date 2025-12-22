@@ -1,23 +1,48 @@
 /* src/sections/Hero.css */
 
-.hero-container {
+/* --- NEW WRAPPER FOR BACKGROUND --- */
+/* This handles the full screen and background positioning */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden; /* Prevents scrollbars if background spills over */
   display: flex;
-  align-items: center;      /* Vertically centers both sides */
-  justify-content: space-between; /* Pushes text left, image right */
-  min-height: 90vh;
-  gap: 50px;               /* Space between text and image */
-  padding: 0 5%;           /* Adds some breathing room on sides */
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Puts the fluid background BEHIND everything */
+}
+
+/* --- MAIN CONTAINER (Content) --- */
+.hero-container {
+  position: relative; /* Crucial: Puts content ABOVE the background */
+  z-index: 1;        
+  display: flex;
+  align-items: center;      
+  justify-content: space-between; 
+  width: 100%;
+  max-width: 1200px; /* Keeps layout neat on large screens */
+  gap: 50px;              
+  padding: 0 5%;          
 }
 
 /* --- LEFT SIDE: TEXT --- */
 .hero-content {
-  flex: 1;                /* Takes up half the space */
-  max-width: 600px;       /* Prevents text from stretching too wide */
-  text-align: left;       /* Aligns text to the left */
+  flex: 1;                
+  max-width: 600px;       
+  text-align: left;       
 }
 
 .hero-greeting {
-  font-size: 4.5rem;      /* Big & Bold */
+  font-size: 4.5rem;      
   font-weight: 800;
   margin-bottom: 15px;
   line-height: 1.1;
@@ -27,7 +52,7 @@
 .hero-role {
   font-size: 2.2rem;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: var(--text-secondary); /* Ensure this variable exists in index.css */
   margin-bottom: 25px;
 }
 
@@ -41,15 +66,15 @@
 
 /* --- RIGHT SIDE: IMAGE --- */
 .hero-image {
-  flex: 1;                /* Takes up the other half */
+  flex: 1;                
   display: flex;
-  justify-content: center; /* Centers image in its half */
+  justify-content: center; 
   position: relative;
 }
 
 .floating-img {
   width: 100%;
-  max-width: 500px;       /* Keeps image at a perfect size */
+  max-width: 500px;       
   height: auto;
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
   animation: float 6s ease-in-out infinite;
@@ -59,12 +84,11 @@
 .hero-buttons {
   display: flex;
   gap: 25px;
-  justify-content: flex-start; /* Aligns buttons to the left */
+  justify-content: flex-start; 
   margin-top: 10px;
 }
-/* --- CREATIVE YET DECENT BUTTONS --- */
 
-/* 1. Primary Button: "Gradient Border" Style */
+/* Primary Button: Gradient Border */
 .btn-primary {
   position: relative;
   background: transparent;
@@ -72,102 +96,12 @@
   padding: 16px 40px;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 8px; /* Slightly rounded, looks more 'tech' than pill shape */
+  border-radius: 8px;
   text-decoration: none;
   overflow: hidden;
   transition: all 0.4s ease;
   
-  /* The Gradient Border Trick */
-  border: 2px solid transparent;
-  background-image: linear-gradient(#0a192f, #0a192f), 
-                    linear-gradient(90deg, #22d3ee, #a855f7); 
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle dark shadow */
-}
-
-/* Hover: The gradient floods the button */
-.btn-primary:hover {
-  transform: translateY(-3px);
-  /* Make the background transparent so the gradient shines through */
-  background-image: linear-gradient(transparent, transparent), 
-                    linear-gradient(90deg, #22d3ee, #a855f7);
-  box-shadow: 0 0 20px rgba(34, 211, 238, 0.4); /* Nice glow */
-}
-
-/* 2. Secondary Button: "High Contrast" Style */
-.btn-outline {
-  position: relative;
-  background: transparent;
-  color: #ccd6f6; /* Soft white */
-  padding: 16px 40px;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 8px;
-  text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-  overflow: hidden;
-  z-index: 1;
-}
-
-/* The "Slide Up" Fill Animation */
-.btn-outline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: #ccd6f6; /* White fill */
-  z-index: -1;
-  transition: width 0.3s ease;
-}
-
-/* Hover: Fills with white, text turns dark */
-.btn-outline:hover {
-  color: #0a192f; /* Text turns dark blue */
-  border-color: #ccd6f6;
-  font-weight: 700;
-}
-
-.btn-outline:hover::before {
-  width: 100%; /* Slide animation complete */
-}
-
-/* --- ANIMATIONS & GRADIENTS --- */
-.highlight {
-  background: var(--gradient-text);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 4s linear infinite;
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
-}
-
-@keyframes shine {
-  to { background-position: 200% center; }
-}
-
-/* --- KEEP YOUR NEW BUTTON STYLES --- */
-/* (I've included the 'Tech Precision' buttons you liked below) */
-
-.btn-primary {
-  position: relative;
-  background: transparent;
-  color: #fff;
-  padding: 16px 40px;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 8px;
-  text-decoration: none;
-  overflow: hidden;
-  transition: all 0.4s ease;
+  /* Gradient Border Trick */
   border: 2px solid transparent;
   background-image: linear-gradient(#0a192f, #0a192f), 
                     linear-gradient(90deg, #22d3ee, #a855f7); 
@@ -183,6 +117,7 @@
   box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
 }
 
+/* Secondary Button: High Contrast */
 .btn-outline {
   position: relative;
   background: transparent;
@@ -220,22 +155,42 @@
   width: 100%;
 }
 
+/* --- ANIMATIONS & GRADIENTS --- */
+.highlight {
+  background: var(--gradient-text); /* Ensure variable is in index.css */
+  background-image: linear-gradient(90deg, #22d3ee, #a855f7); /* Fallback */
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
 /* --- MOBILE RESPONSIVENESS --- */
 @media screen and (max-width: 968px) {
   .hero-container {
-    flex-direction: column-reverse; /* Stack vertically on phones */
+    flex-direction: column-reverse; 
     text-align: center;
     justify-content: center;
     padding-top: 50px;
   }
   
   .hero-content {
-    text-align: center; /* Center text on mobile */
+    text-align: center; 
     max-width: 100%;
   }
 
   .hero-buttons {
-    justify-content: center; /* Center buttons on mobile */
+    justify-content: center; 
   }
 
   .hero-image {
