@@ -22,9 +22,9 @@ export const projects = [
     title: "Stock Price Prediction Model",
     description: "Developed a financial forecasting tool using Long Short-Term Memory (LSTM) neural networks to predict stock closing prices. Visualized trends and model performance (RMSE) using Matplotlib and deployed via Streamlit.",
     techStack: ["Python", "LSTM", "Keras", "TensorFlow", "Streamlit"],
-    image: "/projects/stock.png", 
-    githubLink: "#",
-    liveLink: "#"
+    image: "/projects/Stock.png", 
+    githubLink: "https://github.com/Kavyashree784/Stock_Prediction_LSTM",
+    liveLink: "https://stockpredictionlstm-hdrdnkgntbdb6ryl9qxuit.streamlit.app"
   },
   {
     id: 3,
