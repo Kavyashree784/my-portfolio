@@ -18,7 +18,7 @@ export const projects = [
   liveLink: "https://heart-disease-risk-ai-95wm5pcxs7rlqje3ujryus.streamlit.app"
 },
   {
-    id: 2,
+    id: 3,
     title: "Stock Price Prediction Model",
     description: "Developed a financial forecasting tool using Long Short-Term Memory (LSTM) neural networks to predict stock closing prices. Visualized trends and model performance (RMSE) using Matplotlib and deployed via Streamlit.",
     techStack: ["Python", "LSTM", "Keras", "TensorFlow", "Streamlit"],
@@ -26,48 +26,30 @@ export const projects = [
     githubLink: "https://github.com/Kavyashree784/Stock_Prediction_LSTM",
     liveLink: "https://stockpredictionlstm-hdrdnkgntbdb6ryl9qxuit.streamlit.app"
   },
-  {
-    id: 3,
-    title: "Automated Exam Timetable",
-    description: "Created an optimization system to solve complex scheduling constraints (room capacity, student conflicts). Utilized Integer Linear Programming (ILP) and Genetic Algorithms to generate conflict-free timetables automatically.",
-    techStack: ["Python", "Google OR-Tools", "Genetic Algorithms"],
-    image: "/projects/timetable.png",
-    githubLink: "#",
-    liveLink: "#"
-  },
-  {
-    id: 4,
-    title: "IoT Smart Home (CADIO)",
-    description: "Designed a voice-controlled home automation system integrating ESP32 microcontrollers with Google Assistant and Amazon Alexa. Enabled remote control of appliances with real-time status monitoring via cloud integration.",
-    techStack: ["ESP32", "C++", "IoT Sensors", "Google Assistant API"],
-    image: "/projects/iot.png",
-    githubLink: "#",
-    liveLink: "#"
-  },
+{
+  id: 4,
+  title: "CareerForge - Expert System for Placement",
+  description: "Engineered a constraint-based Expert System using Python and Streamlit to automate personalized placement strategy. Implemented a Forward Chaining Inference Engine to identify competency gaps against specific company criteria and a Bayesian Belief Network to calculate dynamic selection probabilities. Utilized Constraint Satisfaction Planning (CSP) to generate tailored, week-by-week study roadmaps.",
+  techStack: ["Python", "Streamlit", "Bayesian Networks", "Constraint Satisfaction", "Forward Chaining"],
+  image: "/projects/careerforge.png",
+  githubLink: "#",
+  liveLink: "#"
+},
   {
     id: 5,
-    title: "Retail Management (Walmart)",
-    description: "Customized and deployed an Odoo-based ERP solution to streamline inventory, POS, and CRM operations. Automating sales forecasting using linear regression and improved inventory accuracy.",
-    techStack: ["Odoo ERP", "Python", "PostgreSQL"],
-    image: "/projects/retail.png", // Make sure to add this image or use a placeholder
+    title: "Phishing Website Detection",
+    description: "Built a cybersecurity tool to detect social media phishing attacks. Extracted URL and content-based features to train ML classifiers (Random Forest/SVM), achieving high accuracy in distinguishing legitimate sites.",
+    techStack: ["Python", "Machine Learning", "Scikit-learn"],
+    image: "/projects/security.png", 
     githubLink: "#",
     liveLink: "#"
   },
   {
     id: 6,
-    title: "Phishing Website Detection",
-    description: "Built a cybersecurity tool to detect social media phishing attacks. Extracted URL and content-based features to train ML classifiers (Random Forest/SVM), achieving high accuracy in distinguishing legitimate sites.",
-    techStack: ["Python", "Machine Learning", "Scikit-learn"],
-    image: "/projects/security.png", // Make sure to add this image
-    githubLink: "#",
-    liveLink: "#"
-  },
-  {
-    id: 7,
     title: "Secure Data Leakage Detection",
     description: "Developed a data protection system using a hybrid cryptography approach (AES, Triple DES, RSA) to prevent unauthorized data access and track data leakage sources in corporate environments.",
     techStack: ["Java", "Cryptography", "Network Security"],
-    image: "/projects/crypto.png", // Make sure to add this image
+    image: "/projects/crypto.png", 
     githubLink: "#",
     liveLink: "#"
   }
