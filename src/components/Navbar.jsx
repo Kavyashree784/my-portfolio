@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo or Your Name */}
+        
         <a href="#hero" className="navbar-logo">
-          Kavyashree<span className="dot">.</span>
+          _init/><span className="dot">.</span>
         </a>
 
         {/* Desktop Menu */}
