@@ -27,7 +27,7 @@ export const skills = [
       { name: "Express.js", icon: SiExpress, color: "#000000" },
       { name: "React", icon: FaReact, color: "#61dafb" },
       { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
-      { name: "MySQL", icon: SiMysql, color: "#00758f" },
+      { name: "MySQL", icon: SiMysql, color: "#00758f" }
     ]
   },
   {
