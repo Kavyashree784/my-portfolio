@@ -14,8 +14,8 @@ export const skills = [
       { name: "Python", icon: FaPython, color: "#3776ab" },
       { name: "C++", icon: SiCplusplus, color: "#00599C" },
       { name: "JavaScript", icon: FaJs, color: "#f7df1e" },
-      { name: "HTML", icon: FaHtml5, color: "#e34f26" },
-      { name: "CSS", icon: FaCss3Alt, color: "#1572b6" }
+      { name: "HTML5", icon: FaHtml5, color: "#e34f26" },
+      { name: "CSS3", icon: FaCss3Alt, color: "#1572b6" }
     ]
   },
   {
