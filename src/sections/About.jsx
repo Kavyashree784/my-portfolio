@@ -15,17 +15,15 @@ const About = () => {
 
         <div className="about-text">
           <p>
-            I am a software engineer who believes in technology's power to solve complex real-world problems. 
-            My journey involves more than just writing code; it's about engineering solutions.
+            I’m a software engineer driven by the belief that technology should solve real-world problems in practical and scalable ways. 
+            My approach to development goes beyond writing code, it’s about designing systems that are efficient, secure, and built to last.
           </p>
           <p>
-            Whether it's architecting a real-time event management system with Spring Boot, designing IoT home automation 
-            accessible via voice commands, or training LSTM neural networks to predict stock market trends, 
-            I thrive at the intersection of hardware, software, and data.
+            I have hands-on experience building real-time backend systems using Spring Boot and working with data-driven models such as LSTM neural networks for stock market prediction. 
+            I enjoy tackling problems that sit at the intersection of system design, performance, and data intelligence.
           </p>
           <p>
-            With a strong academic foundation in Software Security and Optimization Techniques, 
-            I build systems that are not only functional but also secure and efficient.
+            Backed by a strong academic foundation in Software Security and Optimization Techniques, I focus on building solutions that are not only functional, but reliable, secure, and production-ready.
           </p>
         </div>
       </div>
