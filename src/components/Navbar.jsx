@@ -15,8 +15,10 @@ const Navbar = () => {
       <div className="navbar-container">
         
         <a href="#hero" className="navbar-logo">
-          _init/><span className="dot">.</span>
+          _init/&gt;<span className="dot">.</span>
         </a>
+
+
 
         {/* Desktop Menu */}
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
