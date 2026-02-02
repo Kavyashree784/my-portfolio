@@ -14,8 +14,8 @@ export const skills = [
       { name: "Python", icon: FaPython, color: "#3776ab" },
       { name: "C++", icon: SiCplusplus, color: "#00599C" },
       { name: "JavaScript", icon: FaJs, color: "#f7df1e" },
-      { name: "HTML5", icon: FaHtml5, color: "#e34f26" },
-      { name: "CSS3", icon: FaCss3Alt, color: "#1572b6" }
+      { name: "HTML", icon: FaHtml5, color: "#e34f26" },
+      { name: "CSS", icon: FaCss3Alt, color: "#1572b6" }
     ]
   },
   {
@@ -57,7 +57,7 @@ export const skills = [
       { name: "Git", icon: FaGitAlt, color: "#f05032" },
       { name: "GitHub", icon: FaGithub, color: "#181717" },
       { name: "Docker", icon: FaDocker, color: "#2496ed" },
-      { name: "Postman", icon: SiPostman, color: "#ff6c37" }
+      { name: "Postman", icon: SiPostman, color: "#ff6c37" },
       { name: "VS Code", icon: VscVscode, color: "#007ACC" },
       { name: "Google Colab", icon: SiGooglecolab, color: "#F9AB00" }
     ]
