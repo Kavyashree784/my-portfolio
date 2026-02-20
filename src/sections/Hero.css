@@ -162,6 +162,7 @@
   background: var(--gradient-text);
   background-size: 200% auto;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 4s linear infinite;
 }

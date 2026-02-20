@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-
+import resumePDF from '../assets/Kavyashree_resume.pdf'; // Adjust the path as needed
 const Navbar = () => {
   // State to manage the mobile menu toggle
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
           <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
           
           {/* Optional: Resume Button */}
-          <a href="/Kavyashree_resume.pdf" target="_blank" download="Kavyashree_resume.pdf" className="btn-resume">
+          <a href={resumePDF} target="_blank" download="Kavyashree_resume.pdf" className="btn-resume">
             Resume
           </a>
         </div>
